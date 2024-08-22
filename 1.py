@@ -4,8 +4,6 @@ from mcstatus import JavaServer
 import os
 
 # Задайте ваш сервер и токен бота
-MINECRAFT_SERVER_IP = os.environ['IP']
-DISCORD_BOT_TOKEN = os.environ['TOKEN']
 CHANNEL_ID = 1262907602568745044
 
 SERVER_NAME = "Echosmine"  # Имя сервера, которое будет отображаться в заголовке
@@ -30,7 +28,7 @@ async def update_server_status():
         return
 
     try:
-        server = JavaServer.lookup(MINECRAFT_SERVER_IP)
+        server = JavaServer.lookup("51.195.14.232:25568")
         status = server.status()
         player_count = status.players.online
         max_players = status.players.max
@@ -55,4 +53,4 @@ async def update_server_status():
             message = await channel.send(embed=embed)
             message_id = message.id  # Сохраняем новый ID сообщения
 
-bot.run(DISCORD_BOT_TOKEN)
+bot.run("MTI3NDM5MTgwNjM3MjQ3OTA3MA.GofTzr.Prhzsew07VEtnpUdebxywlbaQx1CC4Cmn5Vo1c")
