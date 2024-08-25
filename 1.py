@@ -4,7 +4,7 @@ from mcstatus import JavaServer
 import os
 
 # Задайте ваш сервер и токен бота
-CHANNEL_ID = 1276546699711479842
+CHANNEL_ID = 1277366025704313014
 SERVER_NAME = "VainLand"  # Имя сервера, которое будет отображаться в заголовке
 
 intents = discord.Intents.default()
