@@ -4,9 +4,8 @@ from mcstatus import JavaServer
 import os
 
 # Задайте ваш сервер и токен бота
-CHANNEL_ID = 1262907602568745044
-
-SERVER_NAME = "Echosmine"  # Имя сервера, которое будет отображаться в заголовке
+CHANNEL_ID = 1276546699711479842
+SERVER_NAME = "VainLand"  # Имя сервера, которое будет отображаться в заголовке
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
@@ -53,4 +52,4 @@ async def update_server_status():
             message = await channel.send(embed=embed)
             message_id = message.id  # Сохраняем новый ID сообщения
 
-bot.run("MTI3NDM5MTgwNjM3MjQ3OTA3MA.GofTzr.Prhzsew07VEtnpUdebxywlbaQx1CC4Cmn5Vo1c")
+bot.run("MTI3NDM5MTgwNjM3MjQ3OTA3MA.Gut_nb.ni4pajzO03nF-w4mHCRp2eiRjEmgEpewaE3GhE")
