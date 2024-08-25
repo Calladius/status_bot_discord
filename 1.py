@@ -27,7 +27,7 @@ async def update_server_status():
         return
 
     try:
-        server = JavaServer.lookup("51.195.14.232:25568")
+        server = JavaServer.lookup("188.127.241.208:25687")
         status = server.status()
         player_count = status.players.online
         max_players = status.players.max
